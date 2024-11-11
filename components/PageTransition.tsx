@@ -8,8 +8,9 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
   return (
     <AnimatePresence>
       <div key={pathname}>
+        {/* h-sceen */}
         <motion.div
-          className="h-screen w-screen fixed bg-primary top-0 pointer"
+          className=" w-screen fixed bg-primary top-0 pointer"
           initial={{ opacity: 1 }}
           animate={{
             opacity: 0,
